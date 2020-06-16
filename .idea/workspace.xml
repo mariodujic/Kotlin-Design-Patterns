@@ -11,6 +11,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YdH6U3ZOe4mX2lYsgKMHJ8Uw7Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -19,8 +24,13 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Java Projects\Kotlin Design Patterns" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="adapter.AdapterPatternKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="adapter.AdapterPatternKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="Kotlin Design Patterns" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -61,25 +71,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583265375828</updated>
+      <workItem from="1583265378979" duration="673000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1429" height="370" key="GridCell.Tab.0.bottom" timestamp="1583265408733">
+    <state x="674" y="500" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592281454812">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1429" height="370" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1583265408733" />
-    <state width="1429" height="370" key="GridCell.Tab.0.center" timestamp="1583265408733">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1429" height="370" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1583265408733" />
-    <state width="1429" height="370" key="GridCell.Tab.0.left" timestamp="1583265408733">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1429" height="370" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1583265408733" />
-    <state width="1429" height="370" key="GridCell.Tab.0.right" timestamp="1583265408733">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1429" height="370" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1583265408733" />
+    <state x="674" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1592281454812" />
   </component>
 </project>
