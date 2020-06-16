@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c83e1db7-dee0-4104-97e1-83213d2d4644" name="Default Changelist" comment="" />
+    <list default="true" id="c83e1db7-dee0-4104-97e1-83213d2d4644" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +38,20 @@
       <recent name="C:\Java Projects\Kotlin Design Patterns" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.MementoPatternKt">
+    <configuration name="MementoPatternKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="Kotlin Design Patterns" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="memento.MementoPatternKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="adapter.AdapterPatternKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="Kotlin Design Patterns" />
       <option name="VM_PARAMETERS" />
@@ -45,6 +67,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MementoPatternKt" />
         <item itemvalue="Kotlin.adapter.AdapterPatternKt" />
       </list>
     </recent_temporary>
@@ -72,6 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583265375828</updated>
       <workItem from="1583265378979" duration="673000" />
+      <workItem from="1592281433477" duration="1149000" />
     </task>
     <servers />
   </component>
@@ -83,5 +107,21 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="674" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1592281454812" />
+    <state width="1234" height="370" key="GridCell.Tab.0.bottom" timestamp="1592282674731">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1234" height="370" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592282674731" />
+    <state width="1234" height="370" key="GridCell.Tab.0.center" timestamp="1592282674731">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1234" height="370" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592282674731" />
+    <state width="1234" height="370" key="GridCell.Tab.0.left" timestamp="1592282674731">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1234" height="370" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592282674731" />
+    <state width="1234" height="370" key="GridCell.Tab.0.right" timestamp="1592282674731">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1234" height="370" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592282674731" />
   </component>
 </project>
