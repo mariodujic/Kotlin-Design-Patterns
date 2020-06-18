@@ -55,6 +55,8 @@ build/
 .idea/artifacts/kotlin_stdlib_wasm_*
 .idea/jarRepositories.xml
 kotlin-ultimate/
+.idea/discord.xml
+.idea/workspace.xml
 node_modules/
 .rpt2_cache/
 libraries/tools/kotlin-test-js-runner/lib/
