@@ -1,29 +1,42 @@
 package observer
 
-import kotlin.properties.Delegates
+class Subject {
+    private val observers = mutableListOf<Observer>()
 
+    var message: String = ""
+        set(value) {
+            field = value
+            notifyAllObservers()
+        }
 
-fun main() {
-    val observableObject = ObservableObject(PrintingTextChangedListener())
-    observableObject.text = "First hello"
-    observableObject.text = "Second hello"
+    private fun notifyAllObservers() {
+        observers.forEach {
+            it.update()
+        }
+    }
+
+    fun attachObserver(observer: Observer) = observers.add(observer)
 }
 
-interface ValueChangeListener {
-    fun onValueChanged(newValue: String)
+interface Observer {
+    fun update()
 }
 
-class PrintingTextChangedListener: ValueChangeListener {
-    override fun onValueChanged(newValue: String) {
-        println("Text changed to $newValue")
+class GameObserver(private val subject: Subject) : Observer {
+
+    init {
+        subject.attachObserver(this)
+    }
+
+    override fun update() {
+        println("Game message: ${subject.message}")
     }
 }
 
-class ObservableObject(listener: ValueChangeListener) {
-    var text: String by Delegates.observable(
-        initialValue = "",
-        onChange = {
-            _, _, newValue -> listener.onValueChanged(newValue)
-        }
-    )
+fun main() {
+    val subject: Subject = Subject().also {
+        GameObserver(it)
+    }
+    subject.message = "Game started"
+    subject.message = "Game finished"
 }
