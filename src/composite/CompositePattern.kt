@@ -19,7 +19,7 @@ class Rectangle : Shape {
 class ShapeComposite {
     private val shapes = mutableListOf<Shape>()
 
-    fun addShape(vararg shape: Shape) = shapes.forEach { s -> shapes.add(s) }
+    fun addShape(vararg shape: Shape) = shape.forEach { s -> shapes.add(s) }
     fun useShapes() = shapes.forEach { shape: Shape -> shape.draw() }
 }
 
