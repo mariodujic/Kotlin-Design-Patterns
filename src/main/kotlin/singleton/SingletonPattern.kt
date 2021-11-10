@@ -1,11 +1,6 @@
 package singleton
 
 object Singleton {
-
-    init {
-        println("Singleton invoked")
-    }
-
     var variableName = "Hello"
 }
 
