@@ -1,37 +1,5 @@
 package factory
 
-interface Shape {
-    fun draw()
-}
-
-class Triangle : Shape {
-    override fun draw() {
-        println("Drawing triangle")
-    }
-}
-
-
-class Rectangle : Shape {
-    override fun draw() {
-        println("Drawing rectangle")
-    }
-}
-
-enum class ShapeType {
-    TRIANGLE,
-    RECTANGLE
-}
-
-class ShapeFactory {
-
-    fun getShape(type: ShapeType): Shape {
-        return when (type) {
-            ShapeType.TRIANGLE -> Triangle()
-            ShapeType.RECTANGLE -> Rectangle()
-        }
-    }
-}
-
 fun main() {
 
     val shapeFactory = ShapeFactory()
@@ -40,4 +8,36 @@ fun main() {
 
     val rectangleShape: Shape = shapeFactory.getShape(ShapeType.RECTANGLE)
     rectangleShape.draw()
+}
+
+private interface Shape {
+    fun draw()
+}
+
+private class Triangle : Shape {
+    override fun draw() {
+        println("Drawing triangle")
+    }
+}
+
+
+private class Rectangle : Shape {
+    override fun draw() {
+        println("Drawing rectangle")
+    }
+}
+
+private enum class ShapeType {
+    TRIANGLE,
+    RECTANGLE
+}
+
+private class ShapeFactory {
+
+    fun getShape(type: ShapeType): Shape {
+        return when (type) {
+            ShapeType.TRIANGLE -> Triangle()
+            ShapeType.RECTANGLE -> Rectangle()
+        }
+    }
 }

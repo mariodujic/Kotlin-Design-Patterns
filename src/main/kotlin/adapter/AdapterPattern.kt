@@ -7,13 +7,13 @@ fun main() {
     println("20 temperature celsius is ${fahrenheitTemperature.temperature} fahrenheit temperature")
 }
 
-interface Temperature {
+private interface Temperature {
     var temperature: Double
 }
 
-class CelsiusTemperature(override var temperature: Double) : Temperature
+private class CelsiusTemperature(override var temperature: Double) : Temperature
 
-class FahrenheitTemperature(private var celsiusTemperature: CelsiusTemperature) : Temperature {
+private class FahrenheitTemperature(private var celsiusTemperature: CelsiusTemperature) : Temperature {
 
 
     override var temperature: Double

@@ -8,9 +8,9 @@ fun main() {
     println(upper.print("O tempora, o mores!"))
 }
 
-class Printer(private val strategy: (String) -> String) {
+private class Printer(private val strategy: (String) -> String) {
     fun print(string: String): String = strategy(string)
 }
 
-val lowerCaseFormatter: (String) -> String = String::toLowerCase
-val upperCaseFormatter: (String) -> String = String::toUpperCase
+private val lowerCaseFormatter: (String) -> String = String::toLowerCase
+private val upperCaseFormatter: (String) -> String = String::toUpperCase

@@ -9,19 +9,19 @@ fun main() {
 
 }
 
-interface OrderCommand {
+private interface OrderCommand {
     fun execute()
 }
 
-class OrderAddCommand(private val id: String) : OrderCommand {
+private class OrderAddCommand(private val id: String) : OrderCommand {
     override fun execute() = println("Adding order with the id $id")
 }
 
-class OrderPayCommand(private val id: String) : OrderCommand {
+private class OrderPayCommand(private val id: String) : OrderCommand {
     override fun execute() = println("Paying order with the id $id")
 }
 
-class CommandProcess {
+private class CommandProcess {
     private val queue = ArrayList<OrderCommand>()
 
     fun addToQueue(orderCommand: OrderCommand) = apply { queue.add(orderCommand) }

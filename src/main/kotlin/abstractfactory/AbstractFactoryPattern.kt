@@ -1,78 +1,5 @@
 package abstractfactory
 
-interface Fruit {
-    fun create()
-}
-
-class YellowApple() : Fruit {
-    override fun create() {
-        println("Creating yellow apple!")
-    }
-}
-
-class GreenApple() : Fruit {
-    override fun create() {
-        println("Creating green apple!")
-    }
-}
-
-class BigOrange() : Fruit {
-    override fun create() {
-        println("Creating big orange!")
-    }
-}
-
-class SmallOrange() : Fruit {
-    override fun create() {
-        println("Creating small orange!")
-    }
-}
-
-interface Type
-interface Factory {
-    fun getFruit(type: Type): Fruit
-}
-
-class AppleFactory : Factory {
-
-    override fun getFruit(type: Type): Fruit = when (type) {
-        AppleType.YELLOW_APPLE -> YellowApple()
-        AppleType.GREEN_APPLE -> GreenApple()
-        else -> throw IllegalArgumentException()
-    }
-
-    enum class AppleType : Type {
-        YELLOW_APPLE,
-        GREEN_APPLE
-    }
-}
-
-class OrangeFactory : Factory {
-
-    override fun getFruit(type: Type) =
-        when (type) {
-            OrangeType.BIG_ORANGE -> BigOrange()
-            OrangeType.SMALL_ORANGE -> SmallOrange()
-            else -> throw IllegalArgumentException()
-        }
-
-    enum class OrangeType : Type {
-        BIG_ORANGE,
-        SMALL_ORANGE
-    }
-}
-
-class FruitFactory {
-    companion object {
-        inline fun <reified T> getFactory(): Factory =
-            when (T::class) {
-                OrangeFactory::class -> OrangeFactory()
-                AppleFactory::class -> AppleFactory()
-                else -> throw IllegalArgumentException()
-            }
-    }
-}
-
 fun main() {
     val appleFactory: Factory = FruitFactory.getFactory<AppleFactory>()
 
@@ -89,4 +16,77 @@ fun main() {
 
     bigOrange.create()
     smallOrange.create()
+}
+
+private interface Fruit {
+    fun create()
+}
+
+private class YellowApple() : Fruit {
+    override fun create() {
+        println("Creating yellow apple!")
+    }
+}
+
+private class GreenApple() : Fruit {
+    override fun create() {
+        println("Creating green apple!")
+    }
+}
+
+private class BigOrange() : Fruit {
+    override fun create() {
+        println("Creating big orange!")
+    }
+}
+
+private class SmallOrange() : Fruit {
+    override fun create() {
+        println("Creating small orange!")
+    }
+}
+
+private interface Type
+private interface Factory {
+    fun getFruit(type: Type): Fruit
+}
+
+private class AppleFactory : Factory {
+
+    override fun getFruit(type: Type): Fruit = when (type) {
+        AppleType.YELLOW_APPLE -> YellowApple()
+        AppleType.GREEN_APPLE -> GreenApple()
+        else -> throw IllegalArgumentException()
+    }
+
+    enum class AppleType : Type {
+        YELLOW_APPLE,
+        GREEN_APPLE
+    }
+}
+
+private class OrangeFactory : Factory {
+
+    override fun getFruit(type: Type) =
+        when (type) {
+            OrangeType.BIG_ORANGE -> BigOrange()
+            OrangeType.SMALL_ORANGE -> SmallOrange()
+            else -> throw IllegalArgumentException()
+        }
+
+    enum class OrangeType : Type {
+        BIG_ORANGE,
+        SMALL_ORANGE
+    }
+}
+
+private class FruitFactory {
+    companion object {
+        inline fun <reified T> getFactory(): Factory =
+            when (T::class) {
+                OrangeFactory::class -> OrangeFactory()
+                AppleFactory::class -> AppleFactory()
+                else -> throw IllegalArgumentException()
+            }
+    }
 }

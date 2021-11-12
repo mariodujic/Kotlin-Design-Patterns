@@ -1,7 +1,6 @@
 package builder
 
 fun main() {
-
     val samsungGalaxy = Phone.Builder()
         .setBrand("Samsung")
         .setColor("White")
@@ -13,7 +12,7 @@ fun main() {
     println("Touch screen: ${samsungGalaxy.isTouchScreen}")
 }
 
-data class Phone private constructor(
+private data class Phone private constructor(
     val brand: String?,
     val color: String?,
     val isTouchScreen: Boolean?

@@ -1,6 +1,14 @@
 package observer
 
-class Subject {
+fun main() {
+    val subject: Subject = Subject().also {
+        GameObserver(it)
+    }
+    subject.message = "Game started"
+    subject.message = "Game finished"
+}
+
+private class Subject {
     private val observers = mutableListOf<Observer>()
 
     var message: String = ""
@@ -18,11 +26,11 @@ class Subject {
     fun attachObserver(observer: Observer) = observers.add(observer)
 }
 
-interface Observer {
+private interface Observer {
     fun update()
 }
 
-class GameObserver(private val subject: Subject) : Observer {
+private class GameObserver(private val subject: Subject) : Observer {
 
     init {
         subject.attachObserver(this)
@@ -31,12 +39,4 @@ class GameObserver(private val subject: Subject) : Observer {
     override fun update() {
         println("Game message: ${subject.message}")
     }
-}
-
-fun main() {
-    val subject: Subject = Subject().also {
-        GameObserver(it)
-    }
-    subject.message = "Game started"
-    subject.message = "Game finished"
 }
